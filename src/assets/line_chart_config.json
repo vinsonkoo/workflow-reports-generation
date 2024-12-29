@@ -1,0 +1,12 @@
+{
+  "type": "line_chart",
+  "title": "Sales Call Trends",
+  "x_axis": "Date",
+  "y_axis": "Number of Reports",
+  "data": [
+    {
+      "name": "Purchase Interest",
+      "metric": "purchase_interest"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "table",
+  "title": "Feature Request Table",
+  "columns": [
+    {
+      "label": "Name",
+      "key": "name"
+    },
+    {
+      "label": "Description",
+      "key": "description"
+    }
+  ],
+  "items": [
+    {
+      "name": "Salesforce Integration",
+      "description": "Some description of this",
+      "some_other_property": "I'm not used"
+    },
+    {
+      "name": "Shiny buttons",
+      "description": "Some other description",
+      "some_other_property": "I'm not used"
+    }
+  ]
+}
