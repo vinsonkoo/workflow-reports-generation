@@ -7,6 +7,7 @@ import {
   getPaginationRowModel,
   getSortedRowModel,
   flexRender,
+  RowSelectionState,
 } from '@tanstack/react-table';
 import {
   Table,
@@ -25,7 +26,7 @@ import {
   Checkbox,
 } from '@mui/material';
 import { useState } from 'react';
-import { sampleData } from './sampleData';
+import { sampleTableData } from './sampleTableData';
 
 const TanStackTable = () => {
   const [sorting, setSorting] = useState([]);
@@ -87,7 +88,7 @@ const TanStackTable = () => {
   ];
 
   const table = useReactTable({
-    data: sampleData,
+    data: sampleTableData,
     columns,
     state: {
       sorting,

@@ -7,7 +7,7 @@ import {
 } from '@mui/x-data-grid';
 import { Box, Button, Chip, Typography } from '@mui/material';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import { FeatureRequest, sampleData } from './sampleData';
+import { FeatureRequest, sampleTableData } from './sampleTableData';
 import { useState } from 'react';
 
 const MUIDataGrid = () => {
@@ -66,11 +66,11 @@ const MUIDataGrid = () => {
 
   const handleExportCSV = () => {
     // If rows are selected, export only those. Otherwise, export all data
-    let rowsToExport = sampleData;
+    let rowsToExport = sampleTableData;
     
     if (rowSelectionModel.length > 0) {
       // Filter the data to only include selected rows
-      rowsToExport = sampleData.filter(row => rowSelectionModel.includes(row.id));
+      rowsToExport = sampleTableData.filter(row => rowSelectionModel.includes(row.id));
     }
 
     // Create CSV content
@@ -128,7 +128,7 @@ const MUIDataGrid = () => {
     <div style={{ width: '100%' }}>
       <Typography variant="h1">Material UI DataGrid Example</Typography>
       <DataGrid
-        rows={sampleData}
+        rows={sampleTableData}
         columns={columns}
         initialState={{
           pagination: { paginationModel: { pageSize: 5 } },

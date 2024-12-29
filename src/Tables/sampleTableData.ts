@@ -9,7 +9,7 @@ export interface FeatureRequest {
   submittedDate: string;
 }
 
-export const sampleData: FeatureRequest[] = [
+export const sampleTableData: FeatureRequest[] = [
   {
     id: 1,
     name: "Salesforce Integration",

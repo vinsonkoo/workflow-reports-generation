@@ -2,7 +2,7 @@
 import { MaterialReactTable, MRT_ColumnDef } from 'material-react-table';
 import { Box, Button, Chip, Typography } from '@mui/material';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import { FeatureRequest, sampleData } from './sampleData';
+import { FeatureRequest, sampleTableData } from './sampleTableData';
 
 const CustomMaterialReactTable = () => {
   const columns: MRT_ColumnDef<FeatureRequest>[] = [
@@ -119,7 +119,7 @@ const CustomMaterialReactTable = () => {
       <Typography variant="h1">Material React Table Example</Typography>
       <MaterialReactTable
         columns={columns}
-        data={sampleData}
+        data={sampleTableData}
         enableRowSelection
         enableColumnFilters
         enableDensityToggle
